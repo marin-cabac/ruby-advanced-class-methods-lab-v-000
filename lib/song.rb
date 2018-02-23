@@ -33,7 +33,7 @@ class Song
 end
   #######################################
   def self.find_or_create_by_name(s)
-    obj=self.find_by_name(s)
+    obj= find_by_name(s)
     obj ? obj : self.create_by_name(s)
   end
 
