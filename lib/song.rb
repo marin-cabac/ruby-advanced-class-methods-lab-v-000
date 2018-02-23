@@ -56,6 +56,7 @@ end
   end
   #######################################
   def self.destroy_all
+    @@all.clear
   end
     #initializes and saves a song and artist_name based on the filename format (FAILED - 1)
 end
