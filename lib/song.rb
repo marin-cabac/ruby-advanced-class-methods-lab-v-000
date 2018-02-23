@@ -45,14 +45,14 @@ end
   #######################################
   def self.new_from_filename(mp3_name)
    v=mp3_name.split(/\.|\s-\s/)
-   new_o =  create
+   new_o = create
    new_o.name = v[1]
    new_o.artist_name = v[0]
    new_o
   end
   #######################################
   def self.create_from_filename(mp3_name)
-    self.new_from_filename(mp3_name)
+     new_from_filename(mp3_name)
   end
   #######################################
   def self.destroy_all
