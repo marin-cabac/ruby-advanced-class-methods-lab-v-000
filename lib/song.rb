@@ -44,7 +44,7 @@ end
    end
   #######################################
   def self.new_from_filename(file_n)
-   #v=split(/[^a-zA-Z\s]|\s-\s/)
+   v=file_n.split(/[^a-zA-Z\s]|\s-\s/)
    new_o = self.new
    new_o.name = file_n.split(/[^a-zA-Z\s]|\s-\s/)[1]
    new_o.artist_name = file_n.split(/[^a-zA-Z\s]|\s-\s/)[0]
