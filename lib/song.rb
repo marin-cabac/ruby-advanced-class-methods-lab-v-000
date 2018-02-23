@@ -53,8 +53,9 @@ end
   #######################################
   def self.create_from_filename(mp3_name)
     self.new_from_filename(mp3_name)
-
   end
-
+  #######################################
+  def self.destroy_all
+  end
     #initializes and saves a song and artist_name based on the filename format (FAILED - 1)
 end
