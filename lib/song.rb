@@ -23,7 +23,7 @@ class Song
   end
   #######################################
   def self.create_by_name(name_of_s)
-   s=self.new_by_name(name_of_s)
+   s=new_by_name(name_of_s)
    s.save
    s
  end
@@ -59,5 +59,5 @@ end
     @@all.clear
   end
   #######################################
-    #initializes and saves a song and artist_name based on the filename format (FAILED - 1)
+   
 end
