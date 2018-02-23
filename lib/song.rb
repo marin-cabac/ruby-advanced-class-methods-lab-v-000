@@ -46,8 +46,8 @@ end
   def self.new_from_filename(file_n)
    v=file_n.split(/[^a-zA-Z\s]|\s-\s/)
    new_o = self.new
-   new_o.name = file_n.split(/[^a-zA-Z\s]|\s-\s/)[1]
-   new_o.artist_name = file_n.split(/[^a-zA-Z\s]|\s-\s/)[0]
+   new_o.name = v[1]
+   new_o.artist_name = v[0]
    new_o.save
    new_o
     #v="Thundercat - For Love I Come.mp3".split(/\.|-/)
