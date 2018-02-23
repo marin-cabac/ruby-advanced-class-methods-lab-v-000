@@ -49,28 +49,7 @@ end
    new_o.name = v[1]
    new_o.artist_name = v[0]
    new_o
+
+  end
  
-  end
-
-=begin
-#################################################
-
-c = self.new
-c.name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[1]
-c.artist_name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[0]
-c.save
-c
-###################################################
-
-
-
-  def self.new_from_filename(file_n)
-   v=file_n.split(/\.|-/)
-   new_o = self.create
-   new_o.name = v[1]
-   new_o.artist_name = v[0]
-    #v="Thundercat - For Love I Come.mp3".split(/\.|-/)
-  end
-=end
-  #######################################
 end
