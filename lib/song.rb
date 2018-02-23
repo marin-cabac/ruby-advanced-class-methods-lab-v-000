@@ -19,7 +19,7 @@ class Song
   end
   #######################################
   def save
-     class.all << self
+     self.class.all << self
   end
   #######################################
   def self.create_by_name(name_of_s)
