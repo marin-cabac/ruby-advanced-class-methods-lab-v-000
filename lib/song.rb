@@ -49,7 +49,6 @@ end
    new_o.name = v[1]
    new_o.artist_name = v[0]
    new_o
-
   end
- 
+  ####################################### 
 end
