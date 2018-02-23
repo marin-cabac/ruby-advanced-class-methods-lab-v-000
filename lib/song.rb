@@ -19,7 +19,7 @@ class Song
   end
   #######################################
   def save
-      .class.all << self
+      self.class.all << self
   end
   #######################################
   def self.create_by_name(name_of_s)
@@ -46,7 +46,7 @@ end
   def self.new_from_filename(mp3_name)
    v=mp3_name.split(/\.|\s-\s/)
    new_o = create
-   new_o.name = v[1] 
+   new_o.name = v[1]
    new_o.artist_name = v[0]
    new_o
   end
