@@ -43,12 +43,15 @@ end
   ##  @@all.sort! { |a, b|  a.name <=> b.name }
    end
   #######################################
-  def self.new_from_filename(mp3)
-   v=mp3.split(/\.|\s-\s/)
+  def self.new_from_filename(mp3_name)
+   v=mp3_name.split(/\.|\s-\s/)
    new_o = self.create
    new_o.name = v[1]
    new_o.artist_name = v[0]
    new_o
   end
   ####################################### 
+  def self.create_from_filename(mp3_name)
+  self.new_from_filename(mp3_name)
+    #initializes and saves a song and artist_name based on the filename format (FAILED - 1)
 end
