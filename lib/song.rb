@@ -52,7 +52,7 @@ end
   end
   #######################################
   def self.create_from_filename(mp3_name)
-    (self.new_from_filename(mp3_name)).save
+    self.new_from_filename(mp3_name)
 
   end
 
