@@ -45,7 +45,7 @@ end
   #######################################
   def self.new_from_filename(file_n)
    v=file_n.split(/\.|\s-\s/)
-   new_o = self.new
+   new_o = self.create
    new_o.name = v[1]
    new_o.artist_name = v[0]
    new_o.save
