@@ -57,6 +57,7 @@ end
     new_o.name = v[1]
     new_o.artist_name = v[0]
     new_o.save
+  end 
 
     #initializes and saves a song and artist_name based on the filename format (FAILED - 1)
 end
