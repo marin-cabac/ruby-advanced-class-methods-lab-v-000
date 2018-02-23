@@ -48,7 +48,7 @@ end
    new_o = self.create
    new_o.name = v[1]
    new_o.artist_name = v[0]
-   new_o.save
+   
    new_o
     #v="Thundercat - For Love I Come.mp3".split(/\.|-/)
   end
