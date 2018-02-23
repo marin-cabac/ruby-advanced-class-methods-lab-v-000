@@ -43,21 +43,26 @@ end
   ##  @@all.sort! { |a, b|  a.name <=> b.name }
    end
   #######################################
-  def self.create_from_filename(mp3_formatted_file)
-      # Build a class constructor that accepts a filename in the 
-      # format of " - .mp3", for example "Taylor Swift - Blank Space.mp3".
-      
-      # Given Song.new_from_filename("Taylor Swift - Blank Space.mp3"), 
-      # the constructor should return a new Song instance with the song 
-      # name set to Blank Space and the artist_name set to Taylor Swift.
-      c = self.new 
-      c.name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[1] 
-      c.artist_name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[0]
-      c.save
-      c
-    end 
+  def self.new_from_filename(file_n)
+   v=split(/[^a-zA-Z\s]|\s-\s/)
+   new_o = self.create
+   new_o.name = v[1]
+   new_o.artist_name = v[0]
+    #v="Thundercat - For Love I Come.mp3".split(/\.|-/)
+  end
 
 =begin
+#################################################
+
+c = self.new
+c.name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[1]
+c.artist_name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[0]
+c.save
+c
+###################################################
+
+
+
   def self.new_from_filename(file_n)
    v=file_n.split(/\.|-/)
    new_o = self.create
@@ -65,6 +70,6 @@ end
    new_o.artist_name = v[0]
     #v="Thundercat - For Love I Come.mp3".split(/\.|-/)
   end
-=end 
+=end
   #######################################
 end
